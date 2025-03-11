@@ -12,6 +12,7 @@ def initialize_firebase():
             # Get credentials from settings
             creds_dict = settings.FIREBASE_ADMIN_CREDENTIALS
             
+            
             # Clean up the private key - replace escaped newlines with actual newlines
             if 'private_key' in creds_dict:
                 creds_dict['private_key'] = creds_dict['private_key'].replace('\\n', '\n')
